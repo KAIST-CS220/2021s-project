@@ -45,7 +45,7 @@ body of a lambda term.
 
 Note that you don't really need to use the program to test your
 implementation. You can always override the `main` function of the program to
-debug your impelementation.
+debug your implementation.
 
 ### How to Start?
 
@@ -59,11 +59,11 @@ You then implement the conversion logic in `Translate.fs`. This will allow you
 to translate `Expr` to `DeBruijnExpr` and vice versa.
 
 Once you have the translation logic ready, you can start implement the
-normlization routine in `Evaluate.fs`. We provide useful references as follows:
+normalization routine in `Evaluate.fs`. We provide useful references as follows:
 - https://en.wikipedia.org/wiki/Beta_normal_form
 - Constructive Computation Theory (http://gallium.inria.fr/~huet/PUBLIC/CCT.pdf)
 
-After that, you can define Church numerals and their arithematics with the
+After that, you can define Church numerals and their arithmetics with the
 lambda expressions in `Arith.fs`.
 
 ### Extra Points
@@ -79,6 +79,19 @@ extra points.
 ### Grading
 
 If your code can pass all the tests, you get 90%. If your code can pass extra
-test cases (currently hidden to students), then you get 95%. The rest 5% is
+test cases (currently hidden from students), then you get 95%. The rest 5% is
 based on the readability of your code. Particularly, we expect that your code is
 properly commented.
+
+### FAQs
+
+##### Do I need to consider negative integers?
+
+No. Just encode positive integers and zero using the Church encoding you learned
+in the class.
+
+##### Do I need to modify the parser?
+
+No. The current parser is to showcase that a simple REPL-like program can be
+written with monadic parser combinators. However, we don't expect you to improve
+the parser. Of course, you can modify it for your own practice.
