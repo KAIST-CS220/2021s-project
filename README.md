@@ -73,7 +73,8 @@ significant time if the input is bigger than five (or six). This is obvious
 because lambda expressions include lots of nested expressions. So we will test
 your code only upto `factorial(5)`. However, if you can manage to make it
 efficient, and if your code runs well with `factorial(7)` or above within a few
-seconds (on a normal desktop machine). Then we will give some extra points.
+seconds (on a single core of a normal desktop machine). Then we will give some
+extra points.
 
 ### Grading
 
